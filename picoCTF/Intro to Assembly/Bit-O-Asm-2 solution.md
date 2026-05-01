@@ -51,7 +51,6 @@ eax = 2,619,997
 
 
 ### 6. Final Move
-Line <+41> and <+44>: The result is moved to a temporary memory spot and then moved back into eax.
-The value remains the same.
+Line <+41> and <+44>: The result is moved to a temporary memory spot and then moved back into eax.  The value remains the same.
 
 Flag: picoCTF{2619997}
