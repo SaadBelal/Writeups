@@ -41,7 +41,7 @@ First, the code places two values into memory:
 
 ### 5. Addition (add)
 
-<+36>: Add the hexadecimal value` 0x1f5` to eax.
+<+36>: Add the hexadecimal value `0x1f5` to eax.
 
 Convert ```0x1f5``` to decimal: `501`.
 
@@ -51,6 +51,6 @@ Convert ```0x1f5``` to decimal: `501`.
 
 
 ### 6. Final Move
-Line <+41> and <+44>: The result is moved to a temporary memory spot and then moved back into eax.  The value remains the same.
+<+41> and <+44>: The result is moved to a temporary memory spot and then moved back into eax.  The value remains the same.
 
 Flag: picoCTF{2619997}
