@@ -21,7 +21,6 @@ Download the file using the command:
 
 This one should teach that a value can be pointed to another address,
 in this case we want the value in EAX, but the value is actually a line above, that's because assembly can have relative addresses. The address is RBP
-The solution is the decimal value of 0x9fe1a
-On +22 the value of address which is 0x9fe1a (654874 in decimal) is copied into eax , so eax have that value.
+The solution is the decimal value of 0x9fe1a is (654874 in decimal) is pointed into eax , so eax have that value.
 
 Flag: picoCTF{654874}
