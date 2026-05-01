@@ -3,6 +3,7 @@
 **Level Goal:** 
 We have to find the value of eax.
 
+download the file useing the command: `wget https://artifacts.picoctf.net/c/509/disassembler-dump0_a.txt`
 If we cat the assembly code we see that the eax has the value 0x30.
 <img width="518" height="216" alt="image" src="https://github.com/user-attachments/assets/fbf4ead0-57ef-42a3-82fa-c084e6ebe689" />
 
