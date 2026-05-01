@@ -1,6 +1,6 @@
 # GDB Baby Step 1
 
-### Objective
+## Objective
 
 Determine the value stored in the `EAX` register at the end of the `main` function.
 
