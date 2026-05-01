@@ -19,6 +19,8 @@ If we examine the code, we see how the value is handled across different instruc
 <+22>:    mov    eax,DWORD PTR [rbp-0x4]        ; The value at [rbp-0x4] is moved into the eax register
 <+25>:    pop    rbp
 <+26>:    ret
+```
+
 3. Analysis
 This challenge demonstrates that values aren't always moved directly into a register. Instead, assembly often uses relative addresses or memory pointers:
 
