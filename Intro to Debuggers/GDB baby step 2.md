@@ -61,3 +61,12 @@ it will stop with the following message:
 ```gdb
 Breakpoint 1, 0x0000000000401141 in main ()
 ```
+and now the program is paused as we asked on line main+59 , you can check the address, is the same number. Now we can ask for the value of EAX, that will show the result for the flag in hexadecimal and decimal.
+```gdb
+info registers eax
+```
+```gdb
+eax            0x4af4b             307019
+```
+
+Flag: picoCTF{307019}
