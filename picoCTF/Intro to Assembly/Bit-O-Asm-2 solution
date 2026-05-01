@@ -24,4 +24,4 @@ in this case we want the value in EAX, but the value is actually a line above, t
 The solution is the decimal value of 0x9fe1a
 On +22 the value of address which is 0x9fe1a (654874 in decimal) is copied into eax , so eax have that value.
 
-Flag :`picoCTF{654874}`
+Flag: picoCTF{654874}
