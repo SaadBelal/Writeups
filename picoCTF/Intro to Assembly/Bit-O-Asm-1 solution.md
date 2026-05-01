@@ -19,3 +19,13 @@ If we cat the assembly code, we see the following instructions:
 <+15>:    mov    eax,0x30
 <+20>:    pop    rbp
 <+21>:    ret
+```
+
+Step 3: Analyze the result
+From the code above, we see that the eax register has the value 0x30.
+
+Step 4: Convert to Decimal
+With a simple search, we see that 0x30 = 48.
+
+Flag:
+picoCTF{48}
