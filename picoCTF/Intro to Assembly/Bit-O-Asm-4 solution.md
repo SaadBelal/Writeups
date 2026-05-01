@@ -4,11 +4,8 @@
 This challenge introduces comparisons and branching logic in assembly. It demonstrates how code executes different paths (like if/else statements) using jumps and condition checks.  
 
 ### 1. Download the File
-You can download the assembly dump using wget:
+Download the assembly dump using the following command: `wget https://artifacts.picoctf.net/c/511/disassembler-dump0_d.txt`
 
-Bash
-wget https://artifacts.picoctf.net/c/511/disassembler-dump0_d.txt
-```
 
 ### 2. The Assembly Breakdown
 Below is the annotated code showing the execution flow:
