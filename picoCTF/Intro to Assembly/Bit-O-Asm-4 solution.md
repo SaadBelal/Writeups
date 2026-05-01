@@ -18,11 +18,11 @@ Below is the annotated code showing the execution flow:
 <+11>:    mov    QWORD PTR [rbp-0x20],rsi
 <+15>:    mov    DWORD PTR [rbp-0x4],0x9fe1a    ; [rbp-0x4] = 0x9fe1a
 <+22>:    cmp    DWORD PTR [rbp-0x4],0x2710     ; Compare 0x9fe1a to 0x2710
-<+29>:    jle    0x55555555514e <main+37>       ; If (0x9fe1a <= 0x2710) jump to <+37>
+<+29>:    jle    0x55555555514e <main+37>       ; no jump
 <+31>:    sub    DWORD PTR [rbp-0x4],0x65       ; Else: Subtract 0x65
 <+35>:    jmp    0x555555555152 <main+41>       ; Jump to the end
-<+37>:    add    DWORD PTR [rbp-0x4],0x65       ; (Skipped in this case)
-<+41>:    mov    eax,DWORD PTR [rbp-0x4]        ; Move final value to eax
+<+37>:    add    DWORD PTR [rbp-0x4],0x65       
+<+41>:    mov    eax,DWORD PTR [rbp-0x4]        ; eax = 0x9fdb5 (654773 in decimal)
 <+44>:    pop    rbp
 <+45>:    ret
 ```
@@ -30,7 +30,7 @@ Below is the annotated code showing the execution flow:
 ### 3. Step-by-Step Logic
 Assembly logic can be thought of as a high-level `if/else` statement:
 
-*   **The Initialization:** At line `<+15>`, the memory address `[rbp-0x4]` is set to `0x9fe1a`.[
+*   **The Initialization:** At line `<+15>`, the memory address `[rbp-0x4]` is set to `0x9fe1a`.
 *   **The Comparison (`cmp`):** Line `<+22>` acts like an `if` condition. It compares our value (`0x9fe1a`) against `0x2710`.
 *   **The Branch (`jle`):** `jle` stands for **Jump if Less or Equal**. Since `0x9fe1a` (654,874) is **not** less than or equal to `0x2710` (10,000), the jump does **not** happen.
 *   **The Subtraction (`sub`):** Because the jump was skipped, the code moves to line `<+31>` and subtracts `0x65` from our value.
