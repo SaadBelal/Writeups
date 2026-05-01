@@ -68,7 +68,7 @@ Execution pauses at the breakpoint.
 
 ## Step 4: Examine Memory as String
 
-```gdb id="k2mz9a"
+```gdb
 x/1sb $rbp-0x30
 ```
 
@@ -81,23 +81,9 @@ x/1sb $rbp-0x30
 
 ## Output
 
-```text id="r5t8we"
+```
 "picoCTF{ASCII_IS_EASY_7BCD971D}"
 ```
 
----
 
-## Final Answer
 
-```id="y8u1pl"
-picoCTF{ASCII_IS_EASY_7BCD971D}
-```
-
----
-
-## Notes
-
-* Byte-wise memory writes (`movb`) are commonly used to construct strings at runtime.
-* Viewing memory as a string (`x/s`) avoids manual ASCII conversion.
-* Breakpoints must be placed after initialization to ensure complete data is available.
-* Stack-relative addressing (`rbp-offset`) identifies exact memory locations.
