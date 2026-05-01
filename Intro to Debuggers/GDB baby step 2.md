@@ -1,4 +1,4 @@
-# GDB Baby Step 2 — picoCTF Writeup
+# GDB Baby Step 2 
 
 ## Objective
 
