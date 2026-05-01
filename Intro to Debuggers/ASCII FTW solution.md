@@ -46,27 +46,20 @@ This pattern continues, constructing the full flag.
 
 ---
 
-## Step 2: Set Breakpoint After Memory Initialization
+## Step 2: Set Breakpoint After Memory Initialization &  Run the Program
 
 ```gdb id="g7k2ds"
 break *main+151
+run
 ```
 
 This location is chosen because all bytes have already been written to memory.
-
----
-
-## Step 3: Run the Program
-
-```gdb id="h3n8qp"
-run
-```
 
 Execution pauses at the breakpoint.
 
 ---
 
-## Step 4: Examine Memory as String
+## Step 3: Examine Memory as String
 
 ```gdb
 x/1sb $rbp-0x30
