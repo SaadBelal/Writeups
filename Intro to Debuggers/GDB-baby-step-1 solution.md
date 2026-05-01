@@ -12,6 +12,6 @@ after downloaded the file, we can disassemble the main function with the followi
 chmod +x ./debugger0_a
 gdb ./debugger0_a
 ```
-```(gdb)
-disassemble main
+```
+(gdb) disassemble main
 ```
