@@ -29,25 +29,25 @@ If we examine the code, we see how the value is handled across different instruc
 
 First, the code places two values into memory:
 
-Line <+15>: The value 0x9fe1a (Decimal: 654874) is stored at [rbp-0xc].
+Line <+15>: The value `0x9fe1a` (Decimal: 654874) is stored at `[rbp-0xc]`.
 
-Line <+22>: The value 0x4 (Decimal: 4) is stored at [rbp-0x8].
+Line <+22>: The value `0x4` (Decimal: 4) is stored at `[rbp-0x8]`.
 
 ### 4. Move to RegisterLine
 
-<+29>: The value from [rbp-0xc] is moved into the eax register.
+<+29>: The value from `[rbp-0xc]` is moved into the eax register.
 
-eax = 6548743.
+`eax = 6548743.`
 
 ### 5. Addition (add)
 
-Line <+36>: Add the hexadecimal value 0x1f5 to eax.
+Line <+36>: Add the hexadecimal value` 0x1f5` to eax.
 
-Convert 0x1f5 to decimal: 501.
+Convert `0x1f5` to decimal: 501.
 
-eax = 2,619,496 + 501
+`eax = 2,619,496 + 501`
 
-eax = 2,619,997
+`eax = 2,619,997`
 
 
 ### 6. Final Move
