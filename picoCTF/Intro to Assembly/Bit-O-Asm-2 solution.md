@@ -34,5 +34,4 @@ Hex: 0x9fe1a
 
 Decimal: 654874
 
-Flag
-picoCTF{654874}
+Flag: picoCTF{654874}
