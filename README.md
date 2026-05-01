@@ -17,6 +17,7 @@ This repository is a collection of my detailed solutions and walkthroughs for va
 The repository is organized by platform and category to make navigation easy:
 * `picoCTF/` — Challenges from the picoCTF platform.
     * `Intro-to-Assembly/` — Assembly-specific challenges.
+    * `Intro-to-Debuggers/` — gbd challenges.
 
 ---
 
