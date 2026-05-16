@@ -2,7 +2,7 @@
 
 ## Initial Discovery
 
-The file `mystery.png` was opened using the hex editor :contentReference[oaicite:0]{index=0}.
+The file `mystery.png` was opened using the hex editor (HxD)
 
 Inside the file, the following suspicious string appeared:
 
