@@ -18,7 +18,8 @@ The repository is organized by platform and category to make navigation easy:
 * `picoCTF/` — Challenges from the picoCTF platform.
     * `Intro-to-Assembly/` — Assembly-specific challenges.
     * `Intro-to-Debuggers/` — gbd challenges.
-
+    * `Binary Exploitation/`
+    * `Investigative Reversing Series` - CyLab Security Academy
 ---
 
 ## 💻 Tools Used
