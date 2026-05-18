@@ -25,3 +25,5 @@ The repository is organized by platform and category to make navigation easy:
 * **GDB:** Used for dynamic analysis and debugging binaries.
 * **Ghidra:** For static analysis and decompilation.
 * **Linux:** My primary environment for solving challenges.
+* **IDA Free:** 
+
